@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const fake_db = "fake db. just go with it"
 
 app.get("/", (req, res) => {
   res.send("Hello Automata Girl 🦸🏻‍♀️");
