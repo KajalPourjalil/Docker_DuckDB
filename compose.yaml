@@ -1,7 +1,7 @@
-service:
+services:
   backend:
     build: .
-    port:
+    ports:
       - '9000:9000'
 
   db:
@@ -10,8 +10,8 @@ service:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: mydb
-  volumes:
-    - postgres_data:/var/lib/postgresql/postgres_data
+    volumes:
+      - postgres_data:/var/lib/postgresql/postgres_data
 
 volumes:
   postgres_data:
