@@ -23,5 +23,6 @@ COPY . .
 # EXPOSE 9000
 
 #RUN the app. Actually starts the container after the image is built. you can only have one CMD command in a dockerfile
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+CMD ["python", "app.py"]
 
